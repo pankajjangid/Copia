@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         val transactions = getTransactions()
         val receipts = getReceipts()
 
-        var amt=0
         for (i in receipts.indices){
             for (j in transactions.indices){
                 var amt=0
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         finalList.forEach {
-            Log.d("FINAL DATA","${it.receipt} ${it.refrence} ${it.amount} ")
+            Log.d("FINAL RESULT","${it.receipt} ${it.refrence} ${it.amount} ")
         }
     }
 
